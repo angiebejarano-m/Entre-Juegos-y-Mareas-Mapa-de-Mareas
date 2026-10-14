@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Entre Juegos y Mareas · Necoclí</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F1FAF8;--ink:#0F2A3D;--muted:#4A6572;--card:#FFFFFF;--line:#CFE6E2;--sea:#12706F;--gem:#D93F7B;--sun:#F2B93B;--on-gem:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B1F2C;--ink:#EAF6F4;--muted:#9DB8B8;--card:#12303F;--line:#1F4655;--sea:#5FD0C6;--gem:#F0709C;--sun:#F2C35A}}
+:root[data-theme="dark"]{--bg:#0B1F2C;--ink:#EAF6F4;--muted:#9DB8B8;--card:#12303F;--line:#1F4655;--sea:#5FD0C6;--gem:#F0709C;--sun:#F2C35A}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,sans-serif}
+.w{max-width:960px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:'Bricolage Grotesque',Georgia,sans-serif;line-height:1.08;margin:0}
+h1{font-size:clamp(2.5rem,8vw,4.6rem);font-weight:800;letter-spacing:-.02em}
+h2{font-size:clamp(1.7rem,4.5vw,2.4rem);font-weight:700;margin-bottom:14px}
+h3{font-size:1.2rem;font-weight:700;margin-bottom:6px}
+p{margin:0 0 12px;max-width:62ch}
+.hero{padding:64px 0 28px}
+.hero p{font-size:1.15rem;color:var(--muted)}
+.btn{display:inline-block;background:var(--gem);color:var(--on-gem);font:600 1rem Figtree,sans-serif;border:0;border-radius:999px;padding:14px 28px;cursor:pointer;text-decoration:none}
+.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.pulsera{display:flex;align-items:center;gap:0;margin:34px 0 0;overflow:hidden}
+.pulsera i{flex:none;width:26px;height:26px;border-radius:50%;margin-right:-4px;border:3px solid var(--bg)}
+.pulsera b{flex:1;height:3px;background:var(--line);min-width:20px}
+section{padding:44px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
+.card p{margin:0;color:var(--muted);font-size:.98rem}
+.dos{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.dos ul{margin:8px 0 0;padding-left:20px;color:var(--muted)}
+.si{border-left:5px solid var(--sea)}.no{border-left:5px solid var(--sun)}
+form{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;display:grid;gap:16px}
+label{font-weight:600;font-size:.95rem;display:grid;gap:6px}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px;width:100%}
+textarea{min-height:92px;resize:vertical}
+small{color:var(--muted)}
+#ok{display:none;margin-top:16px;padding:16px;border-radius:14px;background:var(--card);border:1px solid var(--sea)}
+footer{padding:30px 0 50px;color:var(--muted);font-size:.9rem}
+@media (prefers-reduced-motion:no-preference){.btn{transition:transform .15s}.btn:hover{transform:translateY(-2px)}}
+</style>
+</head>
+<body>
+<div class="w">
+<header class="hero">
+  <h1 id="titulo">Volver a jugar frente al mar</h1>
+  <p id="sub">Una escapada entre mujeres en Necoclí: brunch caribeño, un taller para personalizar tu bikini y las historias de quienes han criado este territorio.</p>
+  <a class="btn" href="#registro">Reserva tu cupo</a>
+  <div class="pulsera" aria-hidden="true"><b></b><i style="background:#D93F7B"></i><i style="background:#F2B93B"></i><i style="background:#12706F"></i><i style="background:#7FD1C7"></i><i style="background:#D93F7B"></i><i style="background:#F2B93B"></i><i style="background:#12706F"></i><b></b></div>
+</header>
 
+<section>
+  <h2>Así se vive</h2>
+  <div class="grid">
+    <div class="card"><h3>Antes de llegar</h3><p>Un kit de viaje: tote para personalizar, termo, snacks, antifaz y tapones para descansar desde el trayecto.</p></div>
+    <div class="card"><h3>Al llegar</h3><p>Brunch caribeño en la sala de tu piso: waffles, mango, banano local, chocolate caliente y sandía.</p></div>
+    <div class="card"><h3>Taller “Niña Interior”</h3><p>Personaliza tu bikini y crea manillas con gemas y dijes bien fijados, para que nada termine en el mar.</p></div>
+    <div class="card"><h3>Con el territorio</h3><p>Gastronomía, cultura y naturaleza de la mano de sabedoras y aliadas locales, con trato justo.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Qué es y qué no es</h2>
+  <div class="dos">
+    <div class="card si"><h3>Es</h3><ul><li>Un apartahotel pequeño, íntimo y de trato familiar</li><li>Salas privadas por piso para estar entre mujeres</li><li>Juego, creatividad y descanso sin presión</li></ul></div>
+    <div class="card no"><h3>No es</h3><ul><li>Un resort con spa ni piscina infinita</li><li>Una fiesta ni un retiro de yoga estricto</li><li>Un plan para recoger conchas o arena: cuidamos la playa</li></ul></div>
+  </div>
+</section>
+
+<section>
+  <h2>Elige tu plan</h2>
+  <div class="grid">
+    <div class="card"><h3>Plan A · <span id="pa"></span></h3><p>Experiencia completa con taller, brunch y una actividad con aliadas locales.</p></div>
+    <div class="card"><h3>Plan B · <span id="pb"></span></h3><p>Todo el Plan A con una noche más y una segunda experiencia en el territorio.</p></div>
+  </div>
+  <p style="margin-top:14px"><small>Cupos limitados (entre 8 y 15 mujeres). Reservas con anticipo reembolsable. Fechas tentativas: se confirman cuando se complete el grupo.</small></p>
+</section>
+
+<section id="registro">
+  <h2>Reserva tu cupo</h2>
+  <form id="f">
+    <label>Tu nombre<input name="n" required autocomplete="name"></label>
+    <label>Ciudad desde donde viajarías<input name="c" required></label>
+    <label>¿Qué esperas encontrar en este viaje?<textarea name="e" required placeholder="Con tus palabras, sin filtro"></textarea></label>
+    <label>Plan que te interesa
+      <select name="p"><option value="A">Plan A</option><option value="B">Plan B</option></select></label>
+    <label>¿Qué precio te parece justo para este plan?<input name="r" inputmode="numeric" placeholder="Ej: 450000"></label>
+    <button class="btn" type="submit">Enviar por WhatsApp</button>
+    <small>Al enviar, se abre WhatsApp con tu mensaje listo. Te respondemos personalmente.</small>
+  </form>
+  <div id="ok" role="status"></div>
+</section>
+<footer>Apartahotel Sueños Libres · Necoclí, Antioquia</footer>
+</div>
+
+<script>
+// ===== EDITA ESTOS VALORES =====
+var WA_NUMBER="573000000000";           // WhatsApp con indicativo, sin + ni espacios
+var PRECIO_A="$390.000 COP", PRECIO_B="$590.000 COP"; // valores de ejemplo
+// Variantes de mensaje (prueba A/B): comparte el enlace con ?v=1, ?v=2 o ?v=3
+var V={
+ "1":["Volver a jugar frente al mar","Una escapada entre mujeres en Necoclí: brunch caribeño, un taller para personalizar tu bikini y las historias de quienes han criado este territorio."],
+ "2":["Descansar entre mujeres, en un lugar seguro","Un apartahotel íntimo en Necoclí con salas privadas por piso, trato familiar y un plan pensado para que solo tengas que llegar."],
+ "3":["El viaje que te devuelve a ti","Tres días para reconectar con la niña que fuiste, con arte, comida con memoria y mujeres que sostienen este territorio."]
+};
+var q=new URLSearchParams(location.search),v=V[q.get("v")]?q.get("v"):"1";
+document.getElementById("titulo").textContent=V[v][0];
+document.getElementById("sub").textContent=V[v][1];
+document.title=V[v][0]+" · Necoclí";
+document.getElementById("pa").textContent=PRECIO_A;
+document.getElementById("pb").textContent=PRECIO_B;
+document.getElementById("f").addEventListener("submit",function(ev){
+  ev.preventDefault();
+  var d=new FormData(ev.target);
+  var m="Hola, quiero reservar un cupo en Entre Juegos y Mareas.\n"+
+   "Nombre: "+d.get("n")+"\nCiudad: "+d.get("c")+"\nPlan: "+d.get("p")+
+   "\nPrecio que me parece justo: "+(d.get("r")||"-")+
+   "\nEspero encontrar: "+d.get("e")+"\n[v"+v+"]";
+  var url="https://wa.me/"+WA_NUMBER+"?text="+encodeURIComponent(m);
+  var ok=document.getElementById("ok");
+  ok.style.display="block";
+  ok.innerHTML="Gracias, "+String(d.get("n")).replace(/</g,"&lt;")+". Si WhatsApp no se abrió, <a href='"+url+"' target='_blank' rel='noopener'>toca aquí para enviarlo</a>.";
+  window.open(url,"_blank");
+});
+</script>
+</body>
+</html>
